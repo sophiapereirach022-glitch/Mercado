@@ -1,0 +1,45 @@
+div.inputs-canalfeedback {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.container-card div img {
+    height: 35px;
+}
+
+.cabecalho-feedback {
+    border-radius: 8px 8px 0 0;
+    background-color: #133b56;
+}
+
+.cabecalho-feedback div {
+    line-height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecalho-feedback span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.btn-canalfeedback {
+    width: 100%;
+    background-color: #1a5379;
+    border-color: #1a5379;
+}
+
+.btn-canalfeedback:hover {
+    background-color: #133b56;
+}
+
+
+#some {}
+
+.container-cards .ts-control,
+.container-cards textarea {
+    background-color: rgb(233, 233, 233);
+}

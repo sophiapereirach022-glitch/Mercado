@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    
+    <div class="container-sidebar">
+        <aside class="sidebar">
+            <header class="header-sidebar">
+                <input type="checkbox" id="check-aside">
+                <label for="check-aside" id="btna">
+                    <span>
+                        <i class="bi bi-list"></i>
+                    </span>
+                </label>
+
+                <div>
+                    <span class="me-3" id="header-sidebar-txt">Olá,
+                        <strong>
+
+                        </strong>
+                    </span>
+                </div>
+            </header>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="portal/portal.html" class="aside-link">
+                            <span class="item-icon"><i class="bi bi-house-door"></i></span>
+                            <span class="menu-txt">Início</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="funcionarios.html" class="aside-link">
+                            <span class="item-icon"><i class="bi bi-person-vcard"></i></span>
+                            <span class="menu-txt">Funcionários</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="canalfeedback.html" class="aside-link">
+                            <span class="item-icon"><i class="bi bi-megaphone"></i></span>
+                            <span class="menu-txt">Canal de Feedbacks</span>
+                        </a>
+                    </li>
+
+
+                    <li class="dropdown"> <!-- ← dentro do ul -->
+                        <a href="#" class="aside-link">
+                            <span class="item-icon"><i class="bi bi-card-checklist"></i></span>
+                            <span class="menu-txt">Gerenciamento</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="adm/listagemsac.html" class="aside-link">
+                                    <span class="item-icon"><i class="bi bi-list-stars"></i></span>
+                                    <span class="menu-txt">Listagem SAC</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="adm/listagemcanalfeedback.html" class="aside-link">
+                                    <span class="item-icon"><i class="bi bi-list-stars"></i></span>
+                                    <span class="menu-txt">Listagem Feedback</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="revista.html" class="aside-link">
+                                    <span class="item-icon"><i class="bi bi-list-stars"></i></span>
+                                    <span class="menu-txt">Revista</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="carga.html" class="aside-link">
+                                    <span class="item-icon"><i class="bi bi-truck"></i></span>
+                                    <span class="menu-txt">Carga</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="estoque.html" class="aside-link">
+                                    <span class="item-icon"><i class="bi bi-box-seam"></i></span>
+                                    <span class="menu-txt">Estoque</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../portal_login/logout.php" class=" aside-link">
+                            <span class="item-icon logout-icon" title="Sair">
+                                <i class="bi bi-box-arrow-right"></i>
+                            </span>
+                            <span class="menu-txt" class="btn btn-sm" id="logout-txt">
+                                Sair
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="footer-sidebar">
+
+            </footer>
+        </aside>
+    </div>
+
+    <div class="page-content">
+        <div class="container-center">
+            <div class="container-card">
+                <div class="cabecalho-feedback">
+                    <div>
+                        <div id="some"><span>Reclamações, Sugestões e Elogios</span></div>
+                        <div><span>Canal de Feedback</span></div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <label class="form-label"><strong>Setor do Remetente</strong></label>
+                        <div>
+                            <select name="setor" id="form-feedback" class="form-control" required>
+                                <option value="">Selecione..</option>
+                                <option value="administrativo">Administrativo</option>
+                                <option value="enfermagem">Enfermagem</option>
+                                <option value="higienizacao">Higienização</option>
+                                <option value="lavanderia">Lavanderia</option>
+                                <option value="nutricao">Nutrição</option>
+                                <option value="raiox">Raio-X</option>
+                                <option value="recepcao">Recepção</option>
+                                <option value="ti-manutencao">TI e manutenção</option>
+                            </select>
+                        </div>
+
+                        <label class="form-label"><strong>Tipo de Feedback</strong></label>
+                        <div>
+                            <select name="tipo" id="form-tipo" class="form-control" required>
+                                <option value="">Selecione..</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="elogio">Elogio</option>
+                            </select>
+                        </div>
+
+                        <label class="form-label"><strong>Descrição do Feedback</strong></label>
+                        <div>
+                            <textarea name="descricao" rows="5" class="form-control" class="campos" required
+                                placeholder="Descreva aqui"></textarea>
+                        </div>
+
+                        <label class="form-label"><strong>Manter Feedback anônimo?</strong></label>
+                        <div class="anonimo-feedback">
+
+                            <div class="inputs-canalfeedback">
+                                <div>
+                                    <input type="radio" name="anonimo" value="sim"> <span>Sim</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="anonimo" value="nao"> <span>Não</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-canalfeedback">
+                            Enviar
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+div.container-center{
+    flex-direction: column ;
+    display: flex ;
+    height: 100vh ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===botões=== */
+button{
+    margin-top: 5px;
+    padding: 6.5px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*===cards===*/
+.container-card{
+    box-shadow: 0 .50rem 0.75rem #c6c6c6;
+    border-radius: 8px;
+    width: 60%;
+}
+/*===cards pequenos===*/
+#organizacao-cards {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    width: 23%;
+    margin: 10px 0;
+    box-shadow: 0 .50rem 0.75rem #c6c6c6;
+}
+
+.cards img {
+    width:75%;
+}
+
+/* ===card inividuais=== */
+
+.card-body{
+     padding: 1.5rem;
+}
+
+
+/* ===formulario=== */
+.form-label{
+    margin-bottom: 1rem;
+}
+
+form > div{
+    margin-bottom: 1rem ;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+
+

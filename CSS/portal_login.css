@@ -1,0 +1,98 @@
+@import url(../style.css);
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+ 
+/* Lado esquerdo: imagem de fundo */
+#body-login-imagem-fundo {
+    flex: 1;
+    background-image: url(../IMAGENS/teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+/* Lado direito: formulário */
+#container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.75;
+    background-color: #1e3027;
+    padding: 40px 30px;
+   
+}
+ 
+#container h1 {
+    color: #f8f5f2;
+    padding-bottom: 20px;
+    text-align: center;
+}
+ 
+div#box-login-fundo {
+    width: 65%;
+    border-radius: 26px 4px;
+    background-color: #354d40;
+    padding: 20px;
+     box-shadow: 0 .5rem 1rem#2a3d33;
+}
+ 
+div.box-login {
+    background-color: #f8f5f2;
+    padding: 10px;
+    border-radius: 8px;
+    color: #385144;
+}
+ 
+div.box-login h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+ 
+div.box-login form {
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 15px;
+}
+ 
+div.box-login form label {
+    display: block;
+}
+ 
+div.box-login form #name,
+div.box-login form #email,
+div.box-login form #password {
+    margin-bottom: 15px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+ 
+div.box-login form button {
+    background-color: #e7980f;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 10px;
+    width: 100%;
+    color: #faefd9;
+}
+ 
+div.box-login form button:hover {
+    background-color: #e8a736;
+}
+ 
+#container h1,
+div.box-login h2,
+div.box-login button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ 
